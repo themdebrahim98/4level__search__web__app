@@ -1,0 +1,143 @@
+.rent {
+  padding: 33px 10%;
+  margin-top: 50px;
+}
+
+.rent .search__banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.search__banner input {
+  padding: 15px 5px;
+
+}
+
+.content {
+
+  margin-top: 75px;
+  background-color: aliceblue;
+}
+
+.content .filter input,
+select {
+
+  text-align: center;
+
+  position: absolute;
+  width: 139px;
+  height: 30px;
+
+}
+
+.content {
+  /* display: flex;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  width: 100%;
+  align-items: center; */
+}
+
+.content .search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.content .filter {
+
+  position: relative;
+  text-align: left;
+  padding: 15px;
+  height: 70px;
+  width: 170px;
+  margin: 0 auto;
+
+}
+
+.content .search__bar button {
+  /* padding: 15PX 45PX; */
+  width: 136px;
+  background: blueviolet;
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.reset__button button {
+  padding: 17px;
+
+}
+
+.item__list {
+  background-color: azure;
+  padding: 15px 10px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 15px;
+  column-gap: 1px;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+@media screen and (max-width:1000px) {
+  .item__list {
+    background-color: azure;
+    padding: 15px 10px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  .content .search__bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search__banner input {
+    margin-top: 2rem;
+  }
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+  .item__list {
+    background-color: azure;
+    padding: 15px 10px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  .content .search__bar {
+    display: block;
+  }
+
+  .rent .search__banner {
+    display: block;
+  }
+
+
+}

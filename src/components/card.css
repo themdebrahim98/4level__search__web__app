@@ -1,0 +1,49 @@
+.card {
+  width: 280px;
+  height: 350px;
+  background-color: #fff;
+}
+
+.card .card__image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.card .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: purple;
+
+}
+
+.card__fotter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: whitesmoke;
+  padding: 5px 5px;
+
+
+}
+
+.card__head p,
+.card__fotter {
+  color: grey;
+}
+
+.card__body {
+  padding: 15px;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .card {
+    width: 350px;
+  }
+}
