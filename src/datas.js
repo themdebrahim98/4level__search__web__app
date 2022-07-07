@@ -58,6 +58,7 @@ let datas = [
 
     {
         location: "england",
+        address: "eng-205 lake, england",
         price: "3000/month",
         image: require(`./media/home1.jpeg`),
         beds: 4,
@@ -67,7 +68,7 @@ let datas = [
         date: "2023-09-15",
     },
     {
-        location: "new york, usa",
+        location: "usa",
         address: "lake-i, new york - usa",
         price: "4000/month",
         image: require(`./media/home1.jpeg`),
@@ -78,7 +79,7 @@ let datas = [
         date: "2023-05-10",
     },
     {
-        location: "new york, usa",
+        location: "usa",
         price: "2000/month",
         image: require(`./media/home1.jpeg`),
         beds: 5,
@@ -89,6 +90,7 @@ let datas = [
     },
     {
         location: "china",
+        address: "hinsonfg-10, china",
         price: "3000/month",
         image: require(`./media/banglow2.jpg`),
         beds: 6,
@@ -98,7 +100,30 @@ let datas = [
         date: "2023-08-08",
     },
     {
+        location: "china",
+        address: "honkong-10, china",
+        price: "3500/month",
+        image: require(`./media/banglow2.jpg`),
+        beds: 6,
+        bathroom: 2,
+        area: "18x7m2",
+        property__type: "banglow",
+        date: "2023-08-08",
+    },
+    {
+        location: "china",
+        address: "455564-10, china",
+        price: "2500/month",
+        image: require(`./media/banglow2.jpg`),
+        beds: 6,
+        bathroom: 2,
+        area: "18x7m2",
+        property__type: "banglow",
+        date: "2023-15-08",
+    },
+    {
         location: "bangalore",
+        address: "lorem , bangalore",
         price: "3000/month",
         image: require(`./media/banglow1.jpg`),
         beds: 6,

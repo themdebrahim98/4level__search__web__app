@@ -30,7 +30,7 @@ export default function Rent() {
     let item__prices = item.price.split('/');
     let input__prices = filter__inputs__data.price.split('-');
     console.log(+(input__prices[0]) <= +(item__prices[0]) < +(input__prices[1]), 'check');
-    return (filter__inputs__data.address.length > 0 ? filter__inputs__data.address === item.address : true) && (filter__inputs__data.date.length > 0 ? filter__inputs__data.date === item.date : true) &&
+    return (filter__inputs__data.location.length > 0 ? filter__inputs__data.location === item.location : true) && (filter__inputs__data.date.length > 0 ? filter__inputs__data.date === item.date : true) &&
       (filter__inputs__data.price.length > 0 ? +(input__prices[0]) <= +(item__prices[0]) && +(item__prices[0]) < +(input__prices[1]) : true) && (filter__inputs__data.property__type.length > 0 ? filter__inputs__data.property__type === item.property__type : true);
 
   }
@@ -86,20 +86,16 @@ export default function Rent() {
           <div className="search__bar">
             <div className="filter">
               <p>Location</p>
-              <select value={filter__inputs__data.address} name="address" id="" onChange={handle__change}>
+              {/* <select value={filter__inputs__data.address} name="address" id="" onChange={handle__change}>
                 <option value=""> select option</option>
-
-
                 {
                   all__data.map((item) => {
 
                     return <option value={item.address}>{item.address}</option>
                   })
                 }
-
-
-              </select>
-              {/* <input type="text" value={filter__inputs__data.location} name="location" id="" onChange={handle__change} /> */}
+              </select> */}
+              <input type="text" value={filter__inputs__data.location} name="location" id="" onChange={handle__change} />
             </div>
 
             <div className="filter">
