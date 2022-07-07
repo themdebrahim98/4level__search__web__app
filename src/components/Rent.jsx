@@ -23,7 +23,7 @@ export default function Rent() {
 
 
   const handle__change = (e) => {
-    setFilter__inputs__data({ ...filter__inputs__data, [e.target.name]: e.target.value })
+    setFilter__inputs__data({ ...filter__inputs__data, [e.target.name]: `${e.target.value.toLowerCase()}` })
   }
 
   function filter__condition__check(item) {
